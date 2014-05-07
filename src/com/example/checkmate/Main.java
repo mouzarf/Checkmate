@@ -1,5 +1,6 @@
 package com.example.checkmate;
 
+
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
@@ -9,6 +10,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewGroup.LayoutParams;
+import android.widget.ImageView;
 import android.os.Build;
 
 public class Main extends Activity {
@@ -18,7 +21,7 @@ public class Main extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		getActionBar().hide();
-		
+
 		
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
