@@ -21,7 +21,7 @@ public class Main extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		getActionBar().hide();
-
+		//TEST
 		
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
