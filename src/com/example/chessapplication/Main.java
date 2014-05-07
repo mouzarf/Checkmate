@@ -26,7 +26,7 @@ public class Main extends ActionBarActivity {
 		/*LayoutParams params = (LayoutParams) mainPicture.getLayoutParams();
 		params.width = 120;
 		mainPicture.setLayoutParams(params);*/
-		
+		//asdasd
 		
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
