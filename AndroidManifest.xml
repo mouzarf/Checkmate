@@ -22,6 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity 
+            android:name="com.example.checkmate.MainScreen"
+  		></activity>
+        <activity 
+            android:name="com.example.checkmate.Ratings"
+  		></activity>
     </application>
 
 </manifest>

@@ -1,28 +1,27 @@
 package com.example.checkmate;
-
-
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewGroup.LayoutParams;
-import android.widget.ImageView;
-import android.os.Build;
+import android.widget.Button;
+import android.widget.TextView;
 
-public class Main extends Activity {
+public class Main extends Activity 
+{
 
+	static Button logIn;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		getActionBar().hide();
-		//TEST
-		
+			
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
@@ -62,6 +61,20 @@ public class Main extends Activity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.fragment_main, container,
 					false);
+			logIn = (Button)rootView.findViewById(R.id.logIn);
+
+			logIn.setOnClickListener(new View.OnClickListener() 
+			{
+
+				@Override
+				public void onClick(View v) 
+				{
+					Intent intent = new Intent(getActivity(), MainScreen.class);
+					startActivity(intent);
+				}								
+				
+			});
+			
 			return rootView;
 		}
 	}
