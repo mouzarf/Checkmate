@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@layout/gradient2">
+    
+<TextView
+        android:id="@+id/opponentText"
+        android:textSize="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="NEXT OPPONENT"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+<TextView
+    android:id="@+id/opponentName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/opponentText"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="25dp"
+    android:text="Name Surname"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textStyle="bold"
+    android:textColor="#FFFFFF" 
+    android:background="#B8B8B8"/>
+
+<TextView
+    android:id="@+id/opponentScore"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/opponentName"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="25dp"
+    android:text="1:0"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textStyle="bold"
+    android:textColor="#FFFFFF" 
+    android:background="#B8B8B8"/>
+
+<TextView
+    android:id="@+id/opponentChance"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/opponentName"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="25dp"
+    android:text="100%"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textStyle="bold"
+    android:textColor="#FFFFFF" 
+    android:background="#B8B8B8"/>
+
+<TextView
+    android:id="@+id/opponentHistory"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/opponentScore"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="25dp"
+    android:text="ASdsaadsjbsdabbdsajdsad fsfdf  dasdsadasd dssad adsads fggfjio  skndas hfdshsfdjdsfj  fdshkjfhdskhdsfkfhdskjfdhsjdsfk  hsdfjkhf  gdjn  lo  k hk hh g  "
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textStyle="bold"
+    android:textColor="#FFFFFF" 
+    android:background="#B8B8B8"/>
+    
+</RelativeLayout>

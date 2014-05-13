@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@layout/gradient2" >
+    
+    <TextView
+        android:id="@+id/positionText"
+        android:textSize="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="YOUR EXPECTED POSITION"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+    android:id="@+id/positionHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/positionText"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="25dp"
+    android:text="Your position: "
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/positionHeader"
+        android:layout_below="@+id/positionHeader"
+        android:text="1st"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

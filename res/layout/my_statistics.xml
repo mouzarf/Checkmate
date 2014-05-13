@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@layout/gradient2" >
+    
+    <TextView
+        android:id="@+id/statisticsText"
+        android:textSize="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="YOUR STATISTICS"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/gamesWon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/statisticsText"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:text="Games won: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gamesWon"
+        android:layout_below="@+id/gamesWon"
+        android:text="100"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/gamesLost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_above="@+id/won"
+        android:layout_alignParentRight="true"
+        android:text="Games lost: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/lost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/gamesLost"
+        android:layout_below="@+id/gamesLost"
+        android:text="50"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/favouriteColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/won"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/won"
+        android:text="Favourite Color: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/favouriteColor"
+        android:layout_below="@+id/favouriteColor"
+        android:text="white"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <TextView
+         android:id="@+id/yourStatistics"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/color"
+         android:layout_marginTop="25dp"
+         android:layout_alignLeft="@+id/favouriteColor"
+         android:text="Your Statistics: "
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textStyle="bold" />
+     
+     <TextView
+        android:id="@+id/statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/yourStatistics"
+        android:layout_below="@+id/yourStatistics"
+        android:text="2700"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+</RelativeLayout>

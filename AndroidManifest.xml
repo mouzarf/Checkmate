@@ -28,6 +28,24 @@
         <activity 
             android:name="com.example.checkmate.Ratings"
   		></activity>
+         <activity 
+            android:name="com.example.checkmate.NextOpponent"
+  		></activity>
+           <activity 
+            android:name="com.example.checkmate.Results"
+  		></activity>
+           <activity 
+            android:name="com.example.checkmate.PlayedGame"
+  		></activity>
+            <activity 
+            android:name="com.example.checkmate.ExpectedPosition"
+  		></activity>
+            <activity 
+            android:name="com.example.checkmate.MyStatistics"
+  		></activity>
+             <activity 
+            android:name="com.example.checkmate.MyDetails"
+  		></activity>
     </application>
 
 </manifest>

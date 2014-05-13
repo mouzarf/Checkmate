@@ -48,7 +48,7 @@ public class Main extends Activity
 		return super.onOptionsItemSelected(item);
 	}
 	
-
+/*
 	@Override
 	public void onWindowFocusChanged(boolean hasFocus) {
 		// TODO Auto-generated method stub
@@ -120,7 +120,7 @@ public class Main extends Activity
 				scaleViewAndChildren(groupView.getChildAt(cnt), scale); 
 		} 
 	} 
-
+*/
 
 
 	/**

@@ -48,9 +48,35 @@ public class MainScreen extends Activity
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) 
 			{
-				if(position==2)
+				if(position==0)
+				{
+					Intent intent = new Intent(MainScreen.this, NextOpponent.class);
+					startActivity(intent);
+				}
+				
+				else if(position==1)
+				{
+					Intent intent = new Intent(MainScreen.this, Results.class);
+					startActivity(intent);
+				}
+				else if(position==2)
 				{
 					Intent intent = new Intent(MainScreen.this, Ratings.class);
+					startActivity(intent);
+				}
+				else if(position==3)
+				{
+					Intent intent = new Intent(MainScreen.this, ExpectedPosition.class);
+					startActivity(intent);
+				}
+				else if(position==4)
+				{
+					Intent intent = new Intent(MainScreen.this, MyStatistics.class);
+					startActivity(intent);
+				}
+				else if(position==5)
+				{
+					Intent intent = new Intent(MainScreen.this, MyDetails.class);
 					startActivity(intent);
 				}
 			}

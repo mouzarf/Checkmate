@@ -14,6 +14,8 @@ public class Ratings extends Activity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.ratings);
+		getActionBar().hide();
+		
 		ListView myListView = (ListView)findViewById(R.id.ratingsList);
 		TextView myEditText = (TextView)findViewById(R.id.ratingsText);
 		

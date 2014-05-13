@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@layout/gradient2" >
+    
+   <TextView
+        android:id="@+id/detailsText"
+        android:textSize="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="YOUR DETAILS"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+   
+     <TextView
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/detailsText"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:text="First Name: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/firstName"
+        android:layout_below="@+id/firstName"
+        android:text="Julita"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+     <TextView
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Last Name:  "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lastName"
+        android:layout_below="@+id/lastName"
+        android:text="Bielik"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+      <TextView
+        android:id="@+id/myGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lname"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="My Gender:  "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+      
+      <EditText
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myGender"
+        android:layout_below="@+id/myGender"
+        android:text="Female"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+      <TextView
+        android:id="@+id/myCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="My Country:  "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+      
+      <EditText
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myCountry"
+        android:layout_below="@+id/myCountry"
+        android:text="Poland"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+      <Button
+          android:id="@+id/button1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:text="Submit" />
+
+</RelativeLayout>
